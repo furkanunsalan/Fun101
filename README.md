@@ -1,5 +1,5 @@
 # Fun101
-Discord bot for fun
+Discord Bot For Fun
 
 This bot is designed to run on repl.it because you can keep the bot alive 24/7 with 3rd party applications if you run it on repl.it
 
