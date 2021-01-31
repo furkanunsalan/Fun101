@@ -10,6 +10,7 @@ from functions import *
 from keep_alive import keep_alive
 from random import randint as r
 from discord import Spotify
+
 intents = discord.Intents(messages=True, guilds=True, reactions=True, members=True, presences=True)
 Bot = commands.Bot(command_prefix="101",help_command=None, intents=intents)
 game = Game()
