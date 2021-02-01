@@ -363,102 +363,13 @@ async def guessing(ctx, text):
     tahminsonuc = random.choice(tahminliste)
     dogruliste = ("Doğru bildin! :partying_face:", "Nokta atışı! :dart:", "Sen bu işi biliyorsun! :sunglasses:")
     dogrucevap = random.choice(dogruliste)
-    if text == "1":
-        if text == tahminsonuc:
+    
+    if text in tahminliste:
+      if text == tahminsonuc:
             embed = discord.Embed(color=5563206 )
             embed.add_field(name="Tebrikler!", value=ctx.author.mention + ",  " + dogrucevap,inline=False)
             await ctx.send(embed=embed)
-        else:
-            embed = discord.Embed(color=15484486 )
-            embed.add_field(name="Bilemedin!", value=ctx.author.mention + "," + " aklımdan " + tahminsonuc + " tutmuştum!  ",inline=False)
-            await ctx.send(embed=embed)
-
-    elif text == "2":
-        if text == tahminsonuc:
-            embed = discord.Embed(color=5563206 )
-            embed.add_field(name="Tebrikler!", value=ctx.author.mention + ",  " + dogrucevap,inline=False)
-            await ctx.send(embed=embed)
-        else:
-            embed = discord.Embed(color=15484486 )
-            embed.add_field(name="Bilemedin!", value=ctx.author.mention + "," + " aklımdan " + tahminsonuc + " tutmuştum!  ",inline=False)
-            await ctx.send(embed=embed)
-
-    elif text == "3":
-        if text == tahminsonuc:
-            embed = discord.Embed(color=5563206 )
-            embed.add_field(name="Tebrikler!", value=ctx.author.mention + ",  " + dogrucevap,inline=False)
-            await ctx.send(embed=embed)
-        else:
-            embed = discord.Embed(color=15484486 )
-            embed.add_field(name="Bilemedin!", value=ctx.author.mention + "," + " aklımdan " + tahminsonuc + " tutmuştum!  ",inline=False)
-            await ctx.send(embed=embed)
-
-    elif text == "4":
-        if text == tahminsonuc:
-            embed = discord.Embed(color=5563206 )
-            embed.add_field(name="Tebrikler!", value=ctx.author.mention + ",  " + dogrucevap,inline=False)
-            await ctx.send(embed=embed)
-        else:
-            embed = discord.Embed(color=15484486 )
-            embed.add_field(name="Bilemedin!", value=ctx.author.mention + "," + " aklımdan " + tahminsonuc + " tutmuştum!  ",inline=False)
-            await ctx.send(embed=embed)
-
-    elif text == "5":
-        if text == tahminsonuc:
-            embed = discord.Embed(color=5563206 )
-            embed.add_field(name="Tebrikler!", value=ctx.author.mention + ",  " + dogrucevap,inline=False)
-            await ctx.send(embed=embed)
-        else:
-            embed = discord.Embed(color=15484486 )
-            embed.add_field(name="Bilemedin!", value=ctx.author.mention + "," + " aklımdan " + tahminsonuc + " tutmuştum!  ",inline=False)
-            await ctx.send(embed=embed)
-
-    elif text == "6":
-        if text == tahminsonuc:
-            embed = discord.Embed(color=5563206 )
-            embed.add_field(name="Tebrikler!", value=ctx.author.mention + ",  " + dogrucevap,inline=False)
-            await ctx.send(embed=embed)
-        else:
-            embed = discord.Embed(color=15484486 )
-            embed.add_field(name="Bilemedin!", value=ctx.author.mention + "," + " aklımdan " + tahminsonuc + " tutmuştum!  ",inline=False)
-            await ctx.send(embed=embed)
-
-    elif text == "7":
-        if text == tahminsonuc:
-            embed = discord.Embed(color=5563206 )
-            embed.add_field(name="Tebrikler!", value=ctx.author.mention + ",  " + dogrucevap,inline=False)
-            await ctx.send(embed=embed)
-        else:
-            embed = discord.Embed(color=15484486 )
-            embed.add_field(name="Bilemedin!", value=ctx.author.mention + "," + " aklımdan " + tahminsonuc + " tutmuştum!  ",inline=False)
-            await ctx.send(embed=embed)
-
-    elif text == "8":
-        if text == tahminsonuc:
-            embed = discord.Embed(color=5563206 )
-            embed.add_field(name="Tebrikler!", value=ctx.author.mention + ",  " + dogrucevap,inline=False)
-            await ctx.send(embed=embed)
-        else:
-            embed = discord.Embed(color=15484486 )
-            embed.add_field(name="Bilemedin!", value=ctx.author.mention + "," + " aklımdan " + tahminsonuc + " tutmuştum!  ",inline=False)
-            await ctx.send(embed=embed)
-
-    elif text == "9":
-        if text == tahminsonuc:
-            embed = discord.Embed(color=5563206 )
-            embed.add_field(name="Tebrikler!", value=ctx.author.mention + ",  " + dogrucevap,inline=False)
-            await ctx.send(embed=embed)
-        else:
-            embed = discord.Embed(color=15484486 )
-            embed.add_field(name="Bilemedin!", value=ctx.author.mention + "," + " aklımdan " + tahminsonuc + " tutmuştum!  ",inline=False)
-            await ctx.send(embed=embed)
-
-    elif text == "10":
-        if text == tahminsonuc:
-            embed = discord.Embed(color=5563206 )
-            embed.add_field(name="Tebrikler!", value=ctx.author.mention + ",  " + dogrucevap,inline=False)
-            await ctx.send(embed=embed)
-        else:
+      else:
             embed = discord.Embed(color=15484486 )
             embed.add_field(name="Bilemedin!", value=ctx.author.mention + "," + " aklımdan " + tahminsonuc + " tutmuştum!  ",inline=False)
             await ctx.send(embed=embed)
@@ -613,7 +524,6 @@ async def sil(ctx, amount=2):
 async def eglence(ctx):
     embed = discord.Embed(title="Eğlence  :tada:", color=6378918)
     embed.add_field(name="`101şarkı` :musical_note:", value="Etiketlenen kullanıcının dinlediği şarkıyı gösterir.", inline=False)
-    embed.add_field(name="`101play` :cd:", value="Kullanıcının istediği şarkıları çalar.", inline=False)
     embed.add_field(name="`101meme` :laughing: :rofl:", value="Reddit'ten r/dankmemes subreddit'inden rastgele meme gönderir.", inline=False)
     embed.add_field(name="`101gif` :regional_indicator_g: :regional_indicator_i: :regional_indicator_f:", value="Rastgele bir gif gönderir.", inline=False)
     embed.add_field(name="`101kahin` :crystal_ball:", value="Kahin senin için bir tahmin yapar.", inline=False)
@@ -621,6 +531,7 @@ async def eglence(ctx):
     embed.add_field(name="`101tekrarla` :speech_balloon: :repeat:", value="Yazılan mesajı tekrarlar.", inline=False)
     embed.add_field(name="`101tokatla` :clap:", value="Etiketlenen kullanıcıyı tokatlar.", inline=False)
     embed.add_field(name="`101sarıl` :hugging:", value="Etiketlenen kullanıcıya sarılır.", inline=False)
+
     embed.set_footer(text="Fun101 Bot",
                      icon_url="https://cdn.discordapp.com/avatars/790929563559002122/f27720946f484ab1bf4203510f347c54.webp?size=1024")
     await ctx.send(embed=embed)
@@ -701,9 +612,7 @@ async def battle(ctx, member: discord.Member):
                 return m.content == 'yumruk' and m.author == ctx.message.author or m.content == 'şifa' and m.author == ctx.message.author or m.content == 'teslim ol' and m.author == ctx.message.author
 
             response = await Bot.wait_for('message', check = check)
-            if "yumruk" in response.content.lower():
-            
-                
+            if "yumruk" in response.content.lower():              
                 if etiketlenencan > 0:
                     dmg = random.choice(dmglist)
                     if dmg == 0:
@@ -731,7 +640,6 @@ async def battle(ctx, member: discord.Member):
                   if gonderencan <= makscan:
                     await ctx.send(f"{gonderen}  {sifamiktar} can şifalandı! {gonderen} **{gonderencan}** can oldu!")
                     tur = 1
-                  
                   elif gonderencan > makscan:
                     gonderencan = 150
                     await ctx.send(f"{sifamiktar} can kazanmaya çalıştın fakat en fazla {makscan} canın olabilir. Daha fazla can alamazsın! ")
@@ -790,51 +698,7 @@ async def battle(ctx, member: discord.Member):
             if "teslim ol" in response.content.lower():
                   await ctx.send(f"{etiketlenen} **{etiketlenencan}** canla teslim oldu. {gonderen} **{gonderencan}** canı varken kazandı.")
                   break
-"""
-Line 1-12 -> Imports -> Needed Imports For The Code
-Line 14-16 -> General Settings -> Game Activity, Prefix etc.
-Line 18-23 -> Reddit Praw Settings -> Needed Settings For 101meme
-Line 25-39 -> 101meme -> Takes A Random Post From r/dankmemes Subreddit
-Line 41-50 -> 101DM -> Sends The Written Text To Siflious#8620
-Line 51-58 -> 101geribildirim -> Shows How To Send Feedbacks
-Line 60-74 -> Bot On Ready -> Casual Things Bot Does When It Stars
-Line 76-93 -> 101şarkı -> Shows What The Tagged Person Is Listening
-Line 95-101 -> 101kaç -> Shows The Servers Bot Has Joined On Terminal
-Line 103-106 -> On Member Join -> Sends A Message When Someone Joins
-Line 108-111 -> On Member Remove -> Sends A Message When Someone Lefts
-Line 113-160 -> 101bilgi -> Shows Information About Tagged User
-Line 162-173 -> 101bot -> Shows Information About Fun101 Bot
-Line 175-194 -> 101tokatla Gifs -> Gif Links For 101tokatla
-Line 196-203 -> 101tokatla -> Slaps The Tagged Person
-Line 205-222 -> 101sarıl Gifs -> Gif Links For 101sarıl
-Line 224-231 -> 101sarıl -> Hugs The Tagged Person
-Line 233-254 -> 101zarvs -> Rolls 2 Dices And Sends A Winning Message
-Line 256-258 -> 101zar -> Rolls A Dice
-Line 260-264 -> 101tekrarla -> Repeats The Written Text
-Line 266-268 -> 101yazıtura -> Flips A Coin
-Line 270-358 -> 101tkm -> User Plays Rock, Paper, Scissors With Fun101  
-Line 360-469 -> 101tahmin -> Bot Chooses A Number And User Tries To Guess It
-Line 471-475 -> 101mood -> Decides Your Mood With Some Emojis
-Line 477-481 -> 101kahin -> Bot Replies To User Question With Random Answers
-Line 483-497 -> 101kick -> Kicks Tagged User If Author Has The Permission
-Line 499-513 -> 101ban -> Bans Tagged User If Author Has The Permission
-Line 515-524 -> 101muteall -> Mutes Every User In A Voice Channel
-Line 526-535 -> 101unmuteall -> Unmutes Every User In A Voice Channel
-Line 537-547 -> 101mute -> Mutes The Tagged User
-Line 549-559 -> 101unmute -> Unmutes The Tagged User
-Line 561-582 -> Gifs for 101gif -> Gif Links For 101gif
-Line 584-590 -> 101gif -> Sends A Random Gif
-Line 592-602 -> 101sunucu -> Gives Information About The Discord Server
-Line 604-610 -> 101sil -> Deletes Up To 50 Messages (User tells The Amount)
-Line 612-626 -> 101eğlence -> Shows All Fun Comments For Fun101
-Line 628-639 -> 101oyunlar -> Shows All Game Comments For Fun101
-Line 641-656 -> 101moderasyon -> Shows All Moderation Comments For Fun101
-Line 658-667 -> 101yardım -> Shows Help Comments For Fun101
-Line 669-792 -> 101dövüş -> Stars A Fight Between Tagged User And Message Author
-Line 793-837 -> Code Comments -> Explanations For All Of Fun101's Code
-Line 838-838 -> Keep Alive -> Keeps Fun101 Always Active
-Line 839-839 -> Bot Run -> But Token And The Function Needed To Run Fun101
-"""
+
 keep_alive()
 Bot.run("NzkwOTI5NTYzNTU5MDAyMTIy.X-Hwjg.cX_64XMhJfK8nO0RgeTwDRKo7qE")
     
