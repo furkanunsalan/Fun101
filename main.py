@@ -700,5 +700,5 @@ async def battle(ctx, member: discord.Member):
                   break
 
 keep_alive()
-Bot.run("NzkwOTI5NTYzNTU5MDAyMTIy.X-Hwjg.cX_64XMhJfK8nO0RgeTwDRKo7qE")
+Bot.run("")
     
