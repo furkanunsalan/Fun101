@@ -1,5 +1,5 @@
 # Fun101
-Fun Based Discord Bot
+Fun101 is a fun based Discord Bot for everyone! 
 
 This bot is designed to entertain users in Discord.
 
