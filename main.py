@@ -1240,4 +1240,4 @@ async def triviacommand(ctx):
 
 
 keep_alive()
-Bot.run("NzkwOTI5NTYzNTU5MDAyMTIy.X-Hwjg.r3ADau3pajyjrqEL3MUwQ9M0Jy0")
+Bot.run("")
