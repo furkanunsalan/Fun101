@@ -1,4 +1,6 @@
 # Fun101
+THIS IS THE VERY OLD VERSION OF THE SOURCE CODE!
+
 Fun101 is a fun based Discord Bot for everyone! 
 
 This bot is designed to entertain users in Discord.
@@ -11,8 +13,6 @@ Fun101 was made using discord.py library.
 Fun101's main language is Turkish and it's the only language bot includes.
 
 Fun101 was a Final Project for a Koç University's CS-101 Course my friend and I've taken.
-
-This is the first version of Fun101's code!
 
 Fun101 is made by Furkan ÜNSALAN and Efe ÇİL
 
