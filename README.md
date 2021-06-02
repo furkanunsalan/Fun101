@@ -4,8 +4,7 @@ Fun101 is a fun based Discord Bot for everyone!
 
 This bot is designed to entertain users in Discord.
 
-Fun101 bot includes 30 commands. 
-(1 help command, 10 moderation commands, 8 fun commands, 6 game commands, 1 feedback command and 4 commands to inform you about what can Fun101 do.)
+Fun101 bot includes 38 commands. 
 
 Fun101 was made using discord.py library.
 
