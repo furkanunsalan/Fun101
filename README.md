@@ -20,4 +20,4 @@ If you have any questions about Fun101 you can send an e-mail to fun101@furkanun
 If you want to add this bot to your server -> 
 https://discord.com/api/oauth2/authorize?client_id=790929563559002122&permissions=8&scope=bot
 
-<a class="button" href="https://discord.com/api/oauth2/authorize?client_id=790929563559002122&permissions=8&scope=bot">Add Fun101 to your server</a>
+<a href="https://discord.com/api/oauth2/authorize?client_id=790929563559002122&permissions=8&scope=bot"  class="button">Add Fun101 to your server</a>
